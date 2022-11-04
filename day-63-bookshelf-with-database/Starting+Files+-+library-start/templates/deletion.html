@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deletion Page</title>
+</head>
+<body>
+<form action="/delete/{{ book_to_delete.id }}" method="post">
+<h1>Are you sure to delete {{ book_to_delete.title }} by {{ book_to_delete.author }} from you library?</h1>
+{{ form.delete }}
+{{ form.cancel }}
+</form>
+</body>
+</html>
